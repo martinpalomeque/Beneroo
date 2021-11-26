@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="Escríbenos y te llamaremos para enseñarte un poco más de todas las posibilidades que tienes para fidelizar a tus empleados con Beneroo.">
+        <meta name="keywords" content="Beneroo, cupones, beneficios, servicios, corporativos, empresas, empleados, descuentos, ofertas, fidelización, comunicación, recursos humanos, hr, administración, clientes, app, mobile, Wellness para empresas, Fidelización de empleados, Fidelizar empleados, Beneficios para colaboradores, Estrategia de compensaciones, Regalos para empleados, Bienestar para empresas, Programas de bienestar para empleados, Yoga para empresas, Fidelizar clientes, Beneficios clientes, Wellness clientes, Beneficios RRHH, Bienestar empresas, Beneficios para funcionarios, Programas de beneficios para empleados, Comunicación empresarial, Incentivos para empleados, Bienestar empleados, Incentivos para colaboradores, Beneficios para empleados, Plataforma de beneficios para empleados, Plan de compensaciones, Bienestar funcionarios, Bienestar del personal, Beneficios para clientes, Reconocimientos para empleados, Comunicación interna empresarial, Alimentación saludable empresa, socios, beneficios para socios, fidelización de cliente, fidelizar empleados">
+        <title>Beneroo | Contactanos y los beneficios son tuyos</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@900&family=Montserrat&display=swap" rel="stylesheet">
+    
+    </head>
+<body>
+
+    <!--CABEZAL-->
+
+    <header>
+        <div class="header__logo">
+            <a href="index.html"><img width="150px" src="imagenes/index/logo.png"></a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a class="nav__menu--superior" id="desplegable" href="beneficios.html">Beneficios</a></li>
+                 
+                <!--NO LOGRÉ CREAR LA LISTA DESPLEGABLE
+                    <ul>
+                        <li><a class="subMenu" href="beneficios.html">Beneficio 1</a></li>
+                        <li><a class="subMenu" href="beneficios.html">Beneficio 2</a></li>
+                        <li><a class="subMenu" href="beneficios.html">Beneficio 3</a></li>
+                    </ul>-->
+                
+                <li><a class="nav__menu--superior" href="clientes.html">Clientes</a></li>
+                <li><a class="nav__menu--superior" href="empresa.html">Empresa</a></li>
+                <li><a class="nav__menu--superior" href="blog.html">Blog</a></li>
+                <li><a class="nav__menu--superior" href="contacto.html"><span class="nav__boton--contacto"><span class="nav__menu--contactoSeleccionado"><strong>Contacto</strong></span></span></a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+        
+    <br>
+    
+    
+<main>
+    
+    
+        <!--PRESENTACIÓN-->
+
+    
+    <h1 class="main__banner">Conctactanos</h1>
+
+
+
+    <!--FORMULARIO-->
+    <section>
+        <h2>Te encantará conocernos</h2>
+        <p>Descubre todo el potencial de nuestro programa y cómo puede ayudarte.</p>
+
+        <br><br><br><br>
+
+        <form action="envio.php" method="post" encytpe="text/plain">
+            <label for="nombre"><input type="text" name="nombre" placeholder="Nombre y apellido"></label><br>
+            <label for="empresa"><input type="text" name="empresa" placeholder="Empresa"></label><br>
+            <label for="email"><input type="email" name="email" placeholder="Correo electrónico"></label><br>
+            <label for="telefono"><input type="telefono" name="telefono" placeholder="Teléfono"></label><br>
+            <textarea placeholder="Comentarios"></textarea>
+            <br><br>
+            <p><strong>Plan de interés:</strong> <input type="checkbox" name="beneficios" value="beneficios"> Club de beneficio <input type="checkbox" name="wellness" value="wellness"> Wellness <input type="checkbox" name="educacion" value="educacion"> Educación online</p>
+            <p><strong>Preferencia:</strong> <input type="radio" name="contacto" value="manana"> Mañana <input type="radio" name="genero" value="tarde"> Tarde</p> 
+            <p><strong>Cargo:</strong> <select name="Cargo"></p>
+                <option value="" selected disabled>Seleccionar</option>
+                <option value="owner">Dueño</option>
+                <option value="hr">Recursos humanos</option>
+                <option value="comercial">Comercial</option>
+                <option value="marketing">Marketing</option>
+                <option value="otro">otro</option>
+            </select>
+            <br><br>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+            <input type="button" value="Borrar">
+    
+        </form>
+        <div id="prefooterContacto">
+        </div>
+        
+    </section>
+</main>
+    
+            <!--FOOTER-->
+
+    <footer>
+        <div class="footer__logo">
+            <img width="100px" src="imagenes/index/logo.png">
+            <br>
+            <p>Potenciamos la relación de empresas<br> con sus Recursos Humanos y Clientes.</p>
+        </div>
+            <ul class="footer__menu">
+                <li><a href="#beneficios">Beneficio 1</a></li>
+                <li><a href="#beneficios">Beneficio 2</a></li>
+                <li><a href="#beneficios">Beneficio 3</a></li>
+            </ul>
+            <ul class="footer__menu">
+                <li><a href="beneficios.html">Beneficios</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="Empresa.html">Empresa</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+    </footer>
+</body>
+</html>
