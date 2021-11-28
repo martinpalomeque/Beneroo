@@ -848,7 +848,7 @@ footer{
 
 
 
- /* RESPONSIVE: Adaptación para CELULARES */
+ /* RESPONSIVE: Adaptación para CELULARES grandes */
 @media only screen and (max-width: 500px){
     
     /* Header */
@@ -1138,5 +1138,293 @@ aside#ranking{
  .posteo__texto--ver-mas:hover{
     opacity: 0.8;
  }
+}
+
+ /* RESPONSIVE: Adaptación para CELULARES chicos */
+ @media only screen and (max-width: 320px){
+ 
+    /* Header */
+
+    header{
+        height: auto;
+        width: 100%;
+        border-bottom: solid 1px $shadow_grey;
+        box-shadow: 0px 4px 10px $shadow_grey;
+        display:block;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    nav{
+        margin: auto;
+        width: 320px;
+        font-size: 13px;
+        align-content: center;
+    }
+    .nav__boton--contacto{
+        padding: 0px;
+        color:$color_negro;
+        background: none;
+        border:none;
+    }
+    h1, h2{
+        font-size: 20px;
+    }
+  
+
+    /* Cabezal */
+
+    #formularioApertura{
+        margin-top: -20px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 200px;
+        width: 100%;
+        padding-bottom: 70px;
+        background-image: url("../imagenes/index/banner480.png");
+        background-size: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type=text] {
+        width: 60%;
+    }
+    input[type=email] {
+        width: 60%;
+    }
+    input[type=submit] {
+        width: 40%;
+        margin: 5px;
+    }
+    label{
+        justify-content: center;
+    }
+
+
+    /* Presentación */
+
+    main{
+        width: 100%;
+        margin-left: 0px;
+    }
+    #presentación{
+        width: 100%;
+        margin-left: 0px;
+        padding-top: 80px;
+    }
+    #presentacion h1{
+        width: 440px;
+        margin-left: 0px;
+        padding-top: 50px;
+        font-size: 30px;
+    }
+    #textoPresentacion{
+        width: 390px;
+        margin-left: 0px;
+    }
+
+
+
+    /* Beneficios */
+
+    h2{
+        width: 440px;
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    p{
+        font-size: 14px;
+    }   
+    aside{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        display: block;
+    }    
+
+    .articleBeneficios__img{
+        margin: 15px;
+        height: 150px;
+        align-items: center;
+        display: block;
+    }
+    .ul__li--lista {
+        font-size: 14px;
+    }
+
+
+
+    /* Clientes y reseñas */
+ 
+ .testimonios{
+    margin-top: 120px;
+}
+.testimonios h2{
+    margin-bottom: 60px;
+ }
+ .reviews__resena{
+    margin: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+    max-width: 400px;
+ }
+ .reviews__resena p{
+    margin:20px;
+    margin-bottom: 40px;
+ }
+ .reviews{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+
+
+ /* Footer */
+
+ footer{
+    height: 220px;
+ }
+.footer__logo{
+    margin-left: 30px;
+}
+.footer__logo p {
+    font-size: 13px;
+}
+.footer__menu{
+    font-size: 13px;
+}
+
+
+ /* EMPRESA: Aplica únicamente en Empresa */
+
+ #quienesSomos {
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#quienesSomos h2{
+    width: 80%;
+}
+#quienesSomos p{
+   width: 80%;
+}
+iframe{
+    width: 100%;
+    height: 350px;
+}
+input[type=text] {
+    width: 60%;
+}
+input[type=email] {
+    width: 60%;
+}
+input[type=telefono] {
+    width: 60%;
+}
+textarea {
+    width: 60%;
+}
+
+
+/* BLOG: Página con Grid */
+
+#grid{
+    margin: 0px;
+    display:grid;
+    grid-template-areas:
+    "header"
+    "posteos"
+    "ranking"
+    "footer";
+    grid-template-rows: 100px auto auto 200px;
+    grid-template-columns: auto;
+    justify-items: stretch;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+header{
+    grid-area: header;
+    justify-content: start;
+    justify-items: center;
+ }
+section#posteos{
+    width: 90%;
+    grid-area: posteos;
+    justify-content: center;
+    justify-self: center;
+ }
+.posteo{
+   min-width: 370px;
+   margin: 10px;
+   display: flex;
+   justify-self: center;
+   justify-content: center;
+   flex-direction:row;
+   border-radius: 15px;
+}
+.posteo__img{
+   margin: 20px;
+   height: 120px;
+   align-items: center;
+   display: block;
+   border-radius: 15px;
+}
+.posteo__texto{
+   width: 40%;
+   text-align: left;
+   align-self: center;
+}
+.posteo__texto h2{
+    margin-top: 20%;
+    margin-left: 20px;
+ }
+.posteo__texto p{
+    width: 80%;
+ }
+#ranking h2{
+   margin-top: 30px;
+   margin-bottom: 40px;
+   font-size: 25px;
+   text-align: center;
+   justify-self: center;
+}
+.posteo-ranking{
+   margin:10px;
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   border-radius: 15px;
+}
+.posteo-ranking__img{
+   margin-left: 10px;
+}
+.posteo-ranking__texto{
+    margin-left: -200px;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+ }
+.posteo-ranking__texto h3{
+    font-size: 16px;
+    text-align: left;
+}
+aside#ranking{
+    grid-area: ranking;
+    justify-content: center;
+    justify-self: center;
+}
+.posteo__texto--ver-mas a{
+    text-decoration: none;
+ }
+ .posteo__texto--ver-mas:hover{
+    opacity: 0.8;
+ }
+
+
+
 
 }
