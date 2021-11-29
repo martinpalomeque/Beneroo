@@ -1,11 +1,20 @@
 @charset "UTF-8";
 body {
-  margin: auto; }
+  margin: auto;
+  background-image: linear-gradient(to bottom, #f7f0f7, #e7d3e7);
+  font-family: "Montserrat", sans-serif;
+  text-align: center; }
 
 /* CABEZAL: Aplica para todas las páginas */
 header {
   height: 100px;
-  width: 100%; }
+  width: 100%;
+  background-color: #FFF;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; }
 
 .header__logo {
   margin-right: 20px;
@@ -14,22 +23,56 @@ header {
 .header__logo img {
   width: 150px; }
 
+.header__logo img:hover {
+  content: url("../imagenes/index/logoHover.png"); }
+
 nav {
   margin-left: 70px; }
 
 .nav__boton--contacto {
   height: 30px;
-  padding: 10px; }
+  padding: 10px;
+  color: #FFF;
+  background-color: #ff0077;
+  border-radius: 5px; }
+
+.nav__boton--contacto:hover {
+  background-color: #200049; }
+
+.nav__menu--seleccionado {
+  color: #ff0077; }
 
 .nav__menu--superior {
-  padding-left: 10px; }
+  padding-left: 10px;
+  color: #000000;
+  font-style: normal;
+  line-height: 20px; }
 
 .subMenu {
-  padding-left: 10px; }
+  padding-left: 10px;
+  color: #000000;
+  font-style: normal;
+  line-height: 20px; }
+
+nav ul li {
+  display: inline; }
+
+header nav ul li a {
+  text-decoration: none; }
+
+header nav ul li a:hover {
+  opacity: 0.7; }
 
 /* PRESENTACIÓN: Aplica para la Home */
+#textoPresentacion {
+  z-index: 1; }
+
 #presentacion {
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
 
 #presentacion h1 {
   padding-top: 150px;
@@ -37,114 +80,234 @@ nav {
 
 /* GENERAL: Aplica para todas las páginas */
 h1 {
-  padding-top: 100px; }
+  padding-top: 100px;
+  color: #444444;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 40px; }
 
 h2 {
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: #444444;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 40px; }
+
+h3 {
+  color: #ff0077; }
 
 .main__banner {
   padding: 100px;
-  padding-top: 130px; }
+  padding-top: 130px;
+  background-image: url("../imagenes/beneficios/bannerWeb.png");
+  background-size: cover; }
 
 #prefooterContacto {
   height: 150px;
   width: 100%;
-  margin-top: 50px; }
+  margin-top: 50px;
+  background-image: url("../imagenes/index/banner2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px; }
+
+li {
+  text-align: left;
+  list-style-type: none; }
 
 /* FORMULARIOS */
 #formularioApertura {
   margin-top: -120px;
   padding: 100px 400px 600px 400px;
   height: 130px;
-  width: 70%; }
+  width: 70%;
+  background-image: url("../imagenes/index/banner.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 45%;
+  z-index: 0;
+  transition: background-size 2s; }
+
+#formularioApertura:hover {
+  background-size: 40%; }
 
 #formularioCierre {
-  padding: 80px; }
+  padding: 80px;
+  justify-content: center;
+  background-image: url("../imagenes/index/banner2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 input[type=text] {
   height: 40px;
   margin: 5px;
-  width: 25%; }
+  width: 25%;
+  border: solid 1.5px #bebebe;
+  box-shadow: 0px 4px 10px #daced6;
+  border-radius: 5px;
+  justify-content: center; }
 
 input[type=email] {
   height: 40px;
   margin: 5px;
-  width: 25%; }
+  width: 25%;
+  border: solid 1.5px #bebebe;
+  box-shadow: 0px 4px 10px #daced6;
+  border-radius: 5px;
+  justify-content: center; }
 
 input[type=telefono] {
   height: 40px;
   margin: 5px;
-  width: 25%; }
+  width: 25%;
+  border: solid 1.5px #bebebe;
+  box-shadow: 0px 4px 10px #daced6;
+  border-radius: 5px;
+  justify-content: center; }
 
 input[type=submit] {
   height: 40px;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  color: #FFF;
+  background-color: #ff0077;
+  box-shadow: 0px 4px 10px #daced6;
+  border-radius: 5px;
+  border: none; }
+
+input[type=submit]:hover {
+  background-color: #200049; }
 
 input[type=reset] {
   height: 40px;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  color: #FFF;
+  background-color: #bebebe;
+  box-shadow: 0px 4px 10px #daced6;
+  border-radius: 5px;
+  border: none; }
+
+input[type=reset]:hover {
+  opacity: 0.8; }
 
 input[type=button] {
   height: 40px;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  color: #FFF;
+  background-color: #bebebe;
+  box-shadow: 0px 4px 10px #daced6;
+  border-radius: 5px;
+  border: none; }
+
+input[type=button]:hover {
+  opacity: 0.8; }
 
 textarea {
   height: 80px;
   margin: 5px;
-  width: 25%; }
+  width: 25%;
+  border: solid 1.5px #bebebe;
+  box-shadow: 0px 4px 10px #daced6;
+  border-radius: 5px;
+  justify-content: center; }
 
 button {
   height: 40px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-top: 40px; }
+  margin-top: 40px;
+  color: #FFF;
+  background-color: #ff0077; }
+
+form p {
+  font-size: 14px; }
+
+button {
+  border-radius: 5px;
+  border: none; }
+
+button:hover {
+  opacity: 0.8; }
 
 /* BENEFICIOS: Aplica para Home y Beneficios */
 .ul__li--lista {
-  padding-right: 15px; }
+  padding-right: 15px;
+  font-style: #200049;
+  display: inline-block; }
 
 .sectionBeneficios {
   width: 100%;
   margin-bottom: 70px;
-  margin-top: 0px; }
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
 
 .articleBeneficios {
   width: 70%;
   min-width: 440px;
   max-width: 1000px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 10px #daced6;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 15px; }
+
+.articleBeneficios:hover {
+  transform: scale(1.05, 1.05); }
 
 .articleBeneficios__img {
   margin: 15px;
   margin-left: 50px;
-  height: 150px; }
+  height: 150px;
+  align-items: center;
+  display: block; }
+
+.articleBeneficios__texto {
+  text-align: left; }
 
 /* PROPUESTA DE VALOR: Aplica para Home */
 #propuestaDeValor {
   width: 100%;
-  margin-top: 180px; }
+  margin-top: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 aside {
   margin-left: 50px;
   margin-right: 70px;
   max-width: 400px;
   min-width: 220px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: left;
+  display: block; }
 
 #tituloPdV {
   margin-bottom: -15px;
-  margin-top: 0px; }
+  margin-top: 0px;
+  font-size: 28px; }
 
 #imagenPdV {
   margin-right: 50px;
   width: 30%;
   min-width: 300px;
-  max-width: 350px; }
+  max-width: 350px;
+  display: block; }
 
 /* CLIENTES Y RESEÑAS: Aplica en Home y en Clientes */
+.logoMarcas h2 {
+  text-align: center; }
+
 .testimonios {
   margin-top: 150px; }
 
@@ -160,19 +323,38 @@ aside {
   max-width: 800px;
   min-width: 400px;
   width: 90%;
-  margin: auto; }
+  margin: auto;
+  display: wrap;
+  justify-content: center;
+  align-content: center;
+  align-self: center; }
 
 .clientes__img {
   width: 130px;
   min-width: 120px;
   max-width: 175px;
   height: 100px;
-  margin: 13px; }
+  margin: 13px;
+  box-shadow: 0px 10px 10px #daced6;
+  flex-grow: 0;
+  flex-shrink: 1;
+  align-self: center;
+  border-radius: 15px; }
+
+.clientes__img:hover {
+  opacity: 0.7;
+  transform: scale(1.1, 1.1); }
 
 .reviews__resena {
   margin: 20px;
   width: 25%;
-  max-width: 300px; }
+  max-width: 300px;
+  background-color: #FFF;
+  box-shadow: 0px 10px 10px #daced6;
+  border-radius: 15px; }
+
+.reviews__resena:hover {
+  transform: scale(1.05, 1.05); }
 
 .reviews__resena h3 {
   padding-left: 10px;
@@ -185,12 +367,24 @@ aside {
 .resena__img {
   width: 80px;
   height: 80px;
-  margin-top: -40px; }
+  margin-top: -40px;
+  border-radius: 50%; }
+
+.resena__h3--uppercase {
+  text-transform: uppercase;
+  font-size: 12px; }
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 /* EMPRESA: Aplica únicamente en Empresa */
 #quienesSomos {
   margin: auto;
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  text-align: center; }
 
 #quienesSomos h2 {
   margin: auto;
@@ -209,51 +403,177 @@ iframe {
 /* FOOTER: Aplica en todas las páginas */
 footer {
   height: 200px;
-  width: 100%; }
+  width: 100%;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; }
 
 .footer__menu {
   min-width: 80px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  font-style: normal;
+  font-size: 14px;
+  text-align: left; }
 
 .footer__logo {
   margin-left: 50px;
   margin-right: 200px;
-  max-width: 400px; }
+  max-width: 400px;
+  text-align: left; }
+
+footer ul li {
+  text-decoration: none; }
+
+.footer ul li a {
+  color: #000000;
+  text-decoration: none; }
+
+footer ul li a:hover {
+  opacity: 0.7; }
 
 /* BLOG: Página con Grid */
 #grid {
+  display: grid;
+  grid-template-areas: "header header header" "categoriaBlog posteos ranking" "footer footer footer";
+  grid-template-rows: 100px auto 200px;
+  grid-template-columns: 1fr 3fr 2fr;
+  justify-items: stretch;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
   margin: 0px; }
+
+header {
+  grid-area: header; }
+
+footer {
+  grid-area: footer; }
+
+.menuCategoria {
+  color: #000000;
+  font-size: 18px;
+  text-align: left;
+  line-height: 10px;
+  text-decoration: none;
+  line-height: 60px; }
+
+.menuCategoria:hover {
+  color: #ff0077; }
 
 .posteo {
   min-width: 350px;
-  margin: 10px; }
+  margin: 10px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 10px #daced6;
+  display: flex;
+  min-width: 350px;
+  justify-self: end;
+  justify-content: right;
+  flex-direction: row;
+  border-radius: 15px; }
+
+.posteo:hover {
+  transform: scale(1.03, 1.03); }
 
 .posteo__img {
   margin: 20px;
-  height: 200px; }
+  height: 200px;
+  align-items: center;
+  display: block;
+  border-radius: 15px; }
 
 #categoriaBlog h2 {
   margin-top: 60px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  font-size: 20px; }
+
+.posteo-ranking__texto h3 {
+  color: #000000;
+  font-size: 20px;
+  text-align: left; }
 
 aside#ranking {
-  margin-right: 100px; }
+  margin-right: 100px;
+  grid-area: ranking;
+  justify-content: center;
+  justify-self: start; }
 
 #ranking h2 {
   margin-top: 30px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+  justify-self: center; }
 
 .posteo-ranking {
-  margin: 10px; }
+  margin: 10px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 10px #daced6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; }
+
+.posteo-ranking:hover {
+  transform: scale(1.05, 1.05); }
 
 .posteo-ranking__img {
   margin: 10px;
   margin-left: 160px;
-  height: 150px; }
+  height: 150px;
+  align-items: center;
+  display: block;
+  border-radius: 10px; }
+
+.posteo__texto--ver-mas a {
+  color: #ff0077; }
+
+.posteo__texto--ver-mas {
+  color: #ff0077; }
+
+.posteo__texto--ver-mas:hover {
+  opacity: 0.8; }
+
+.posteo__texto {
+  text-align: left;
+  align-self: center; }
+
+.posteo-ranking__texto {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  margin-left: -20px; }
+
+section#posteos {
+  grid-area: posteos;
+  justify-content: end;
+  justify-self: center; }
+
+section#categoriaBlog {
+  grid-area: categoriaBlog;
+  justify-content: end;
+  justify-self: end; }
 
 /* POSTEOS */
+.carousel {
+  z-index: 1; }
+
+#carouselExampleControls {
+  z-index: 1; }
+
+.carousel-item img {
+  z-index: 1; }
+
+.d-block {
+  z-index: 1; }
+
 .carousel-item {
-  max-height: 700px; }
+  max-height: 700px;
+  background-size: cover;
+  z-index: 1; }
 
 .row {
   max-width: 800px;
@@ -264,19 +584,31 @@ aside#ranking {
   max-width: 800px;
   margin: auto;
   padding-left: 30px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  color: #000000;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Frank Ruhl Libre', serif; }
 
 .breadcrumb {
   max-width: 800px;
   margin: auto;
   padding-top: 40px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  color: #ff0077; }
+
+.breadcrumb a {
+  text-decoration: none; }
 
 .contenido-posteo__texto {
   max-width: 800px;
   margin: auto;
   margin-bottom: 60px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  line-height: 25px;
+  font-style: normal;
+  font-size: 18px;
+  text-align: left; }
 
 .contenido-posteo {
   max-width: 1000px;
@@ -284,38 +616,89 @@ aside#ranking {
   margin: auto;
   padding-bottom: 30px;
   margin-bottom: 70px;
-  margin-top: -200px; }
+  margin-top: -200px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 10px #FFF;
+  border-radius: 15px;
+  position: relative;
+  z-index: 2; }
 
 .btn {
   padding: 7px;
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 50px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  background-color: #ff0077;
+  border: none; }
+
+.btn:hover {
+  background-color: #200049; }
+
+.btn a {
+  color: #FFF;
+  text-decoration: none; }
+
+.btn:hover {
+  transform: scale(1.05, 1.05); }
 
 .contenido-posteo__boton--contacto {
   max-width: 800px;
   margin: auto;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  line-height: 25px;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center; }
+
+.contenido-posteo div h3 {
+  color: #000000;
+  font-size: 22px;
+  font-family: "Frank Ruhl Libre", serif; }
+
+.contenido-posteo div h2 {
+  font-size: 28px; }
+
+.col a {
+  color: #000000;
+  text-decoration: none; }
+
+.col:hover {
+  transform: scale(1.05, 1.05); }
 
 /* RESPONSIVE: Adaptación para TABLETS */
 @media only screen and (max-width: 1000px) {
   /* Header */
   header {
     height: auto;
-    width: 100%; }
+    width: 100%;
+    border-bottom: solid 1px #bebebe;
+    box-shadow: 0px 4px 10px #daced6;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; }
+  .nav__menu--contactoSeleccionado {
+    color: #ff0077; }
   .header__logo {
     margin: 0px;
     margin-top: 20px; }
   nav {
     margin: auto;
     align-content: center;
-    width: 480px; }
+    width: 480px;
+    font-size: 14px;
+    align-content: center; }
   .nav__boton--contacto {
-    padding: 0px; }
+    padding: 0px;
+    color: #000000;
+    background: none;
+    border: none; }
   iframe {
     width: 100%;
     height: 450px; }
+  label {
+    justify-content: center; }
   /* Clientes y reseñas */
   .reviews__resena {
     margin: 10px;
@@ -346,14 +729,37 @@ aside#ranking {
     width: 80%; }
   /* Grid */
   #grid {
-    margin: 0px; } }
+    display: grid;
+    grid-template-areas: "header" "categoriaBlog" "posteos" "ranking" "footer";
+    grid-template-rows: 100px auto auto 200px;
+    grid-template-columns: auto;
+    justify-items: stretch;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin: 0px; }
+  .menuCategoria {
+    font-size: 14px;
+    line-height: 20px; }
+  /* BLOG: Página con Grid */
+  .posteo {
+    background-color: #FFF;
+    box-shadow: 0px 4px 10px #daced6; }
+  .posteo-ranking {
+    background-color: #FFF;
+    box-shadow: 0px 4px 10px #daced6; } }
 
-/* RESPONSIVE: Adaptación para CELULARES */
+/* RESPONSIVE: Adaptación para CELULARES grandes */
 @media only screen and (max-width: 500px) {
   /* Header */
   header {
     height: auto;
-    width: 100%; }
+    width: 100%;
+    border-bottom: solid 1px #daced6;
+    box-shadow: 0px 4px 10px #daced6;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; }
   .header__logo {
     margin: 0px;
     margin-top: 15px; }
@@ -361,9 +767,16 @@ aside#ranking {
     width: 110px; }
   nav {
     margin-left: 0px;
-    width: 480px; }
+    width: 480px;
+    font-size: 14px;
+    align-content: center; }
   .nav__boton--contacto {
-    padding: 0px; }
+    padding: 0px;
+    color: #000000;
+    background: none;
+    border: none; }
+  h1, h2 {
+    font-size: 30px; }
   /* Cabezal */
   #formularioApertura {
     margin-top: -20px;
@@ -371,7 +784,11 @@ aside#ranking {
     padding-left: 0px;
     padding-top: 200px;
     width: 100%;
-    padding-bottom: 70px; }
+    padding-bottom: 70px;
+    background-image: url("../imagenes/index/banner480.png");
+    background-size: 80%;
+    justify-content: center;
+    align-items: center; }
   input[type=text] {
     width: 60%; }
   input[type=email] {
@@ -379,6 +796,8 @@ aside#ranking {
   input[type=submit] {
     width: 40%;
     margin: 5px; }
+  label {
+    justify-content: center; }
   /* Presentación */
   main {
     width: 100%;
@@ -390,21 +809,30 @@ aside#ranking {
   #presentacion h1 {
     width: 440px;
     margin-left: 0px;
-    padding-top: 50px; }
+    padding-top: 50px;
+    font-size: 30px; }
   #textoPresentacion {
     width: 390px;
     margin-left: 0px; }
   /* Beneficios */
   h2 {
     width: 440px;
-    margin-left: 0px; }
+    margin-left: 0px;
+    font-size: 30px; }
+  p {
+    font-size: 14px; }
   aside {
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    display: block; }
   .articleBeneficios__img {
     margin: 15px;
-    height: 150px; }
+    height: 150px;
+    align-items: center;
+    display: block; }
+  .ul__li--lista {
+    font-size: 14px; }
   /* Clientes y reseñas */
   .testimonios {
     margin-top: 120px; }
@@ -418,15 +846,24 @@ aside#ranking {
   .reviews__resena p {
     margin: 20px;
     margin-bottom: 40px; }
+  .reviews {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   /* Footer */
   footer {
     height: 220px; }
   .footer__logo {
     margin-left: 30px; }
+  .footer__logo p {
+    font-size: 13px; }
+  .footer__menu {
+    font-size: 13px; }
   /* EMPRESA: Aplica únicamente en Empresa */
   #quienesSomos {
     margin: auto;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    text-align: center; }
   #quienesSomos h2 {
     width: 80%; }
   #quienesSomos p {
@@ -444,768 +881,12 @@ aside#ranking {
     width: 60%; }
   /* BLOG: Página con Grid */
   #grid {
-    margin: 0px; }
-  section#posteos {
-    width: 90%; }
-  .posteo {
-    min-width: 370px;
-    margin: 10px; }
-  .posteo__img {
-    margin: 20px;
-    height: 120px; }
-  .posteo__texto {
-    width: 40%; }
-  .posteo__texto h2 {
-    margin-top: 20%;
-    margin-left: 20px; }
-  .posteo__texto p {
-    width: 80%; }
-  #ranking h2 {
-    margin-top: 30px;
-    margin-bottom: 40px; }
-  .posteo-ranking {
-    margin: 10px; }
-  .posteo-ranking__img {
-    margin-left: 10px; }
-  .posteo-ranking__texto {
-    margin-left: -200px; } }
-
-body {
-  background-image: linear-gradient(to bottom, #f7f0f7, #e7d3e7); }
-
-/* CABEZAL: Aplica para todas las páginas */
-header {
-  background-color: #FFF; }
-
-.nav__menu--seleccionado {
-  color: #ff0077; }
-
-.nav__boton--contacto {
-  color: #FFF;
-  background-color: #ff0077; }
-
-.nav__boton--contacto:hover {
-  background-color: #200049; }
-
-.nav__menu--superior {
-  color: #000000; }
-
-.subMenu {
-  color: #000000; }
-
-/* GENERAL: Aplica para todas las páginas */
-h1 {
-  color: #444444; }
-
-h2 {
-  color: #444444; }
-
-h3 {
-  color: #ff0077; }
-
-input[type=text] {
-  border: solid 1.5px #bebebe;
-  box-shadow: 0px 4px 10px #daced6; }
-
-input[type=email] {
-  border: solid 1.5px #bebebe;
-  box-shadow: 0px 4px 10px #daced6; }
-
-input[type=telefono] {
-  border: solid 1.5px #bebebe;
-  box-shadow: 0px 4px 10px #daced6; }
-
-input[type=submit] {
-  color: #FFF;
-  background-color: #ff0077;
-  box-shadow: 0px 4px 10px #daced6; }
-
-input[type=reset] {
-  color: #FFF;
-  background-color: #bebebe;
-  box-shadow: 0px 4px 10px #daced6; }
-
-input[type=button] {
-  color: #FFF;
-  background-color: #bebebe;
-  box-shadow: 0px 4px 10px #daced6; }
-
-textarea {
-  border: solid 1.5px #bebebe;
-  box-shadow: 0px 4px 10px #daced6; }
-
-button {
-  color: #FFF;
-  background-color: #ff0077; }
-
-input[type=submit]:hover {
-  background-color: #200049; }
-
-/* BENEFICIOS: Aplica para Home y Beneficios */
-.ul__li--lista {
-  font-style: #200049; }
-
-.articleBeneficios {
-  background-color: #FFF;
-  box-shadow: 0px 4px 10px #daced6; }
-
-/* CLIENTES Y RESEÑAS: Aplica en Home y en Clientes */
-.clientes__img {
-  box-shadow: 0px 10px 10px #daced6; }
-
-.reviews__resena {
-  background-color: #FFF;
-  box-shadow: 0px 10px 10px #daced6; }
-
-/* FOOTER: Aplica en todas las páginas */
-footer {
-  background-color: #FFF; }
-
-.footer__menu {
-  color: #000000; }
-
-footer ul li a {
-  color: #000000; }
-
-.posteo {
-  background-color: #FFF;
-  box-shadow: 0px 4px 10px #daced6; }
-
-.menuCategoria {
-  color: #000000; }
-
-.menuCategoria:hover {
-  color: #ff0077; }
-
-.posteo-ranking {
-  background-color: #FFF;
-  box-shadow: 0px 4px 10px #daced6; }
-
-.posteo-ranking__texto h3 {
-  color: #000000; }
-
-.posteo__texto--ver-mas a {
-  color: #ff0077; }
-
-.posteo__texto--ver-mas {
-  color: #ff0077; }
-
-/* POSTEOS */
-.loMasLeido {
-  color: #000000; }
-
-.breadcrumb a {
-  color: #ff0077; }
-
-.contenido-posteo div h3 {
-  color: #000000; }
-
-.contenido-posteo {
-  background-color: #FFF;
-  box-shadow: 0px 4px 10px #FFF; }
-
-.btn {
-  background-color: #ff0077; }
-
-.btn a {
-  color: #FFF; }
-
-.btn:hover {
-  background-color: #200049; }
-
-.col a {
-  color: #000000; }
-
-/* RESPONSIVE: Adaptación para TABLETS */
-@media only screen and (max-width: 1000px) {
-  /* Header */
-  header {
-    border-bottom: solid 1px #bebebe;
-    box-shadow: 0px 4px 10px #daced6; }
-  .nav__boton--contacto {
-    color: #000000; }
-  .nav__menu--contactoSeleccionado {
-    color: #ff0077; } }
-
-/* RESPONSIVE: Adaptación para CELULARES */
-@media only screen and (max-width: 500px) {
-  /* Header */
-  header {
-    border-bottom: solid 1px #daced6;
-    box-shadow: 0px 4px 10px #daced6; }
-  .nav__boton--contacto {
-    color: #000000; }
-  /* BLOG: Página con Grid */
-  .posteo {
-    background-color: #FFF;
-    box-shadow: 0px 4px 10px #daced6; }
-  .posteo-ranking {
-    background-color: #FFF;
-    box-shadow: 0px 4px 10px #daced6; }
-  .posteo-ranking__texto h3 {
-    color: #000000; }
-  .posteo__texto--ver-mas a {
-    color: #ff0077; }
-  .posteo__texto--ver-mas {
-    color: #ff0077; } }
-
-body {
-  font-family: 'Montserrat', sans-serif; }
-
-/* CABEZAL: Aplica para todas las páginas */
-.nav__menu--superior {
-  font-style: normal; }
-
-.subMenu {
-  font-style: normal; }
-
-/* GENERAL: Aplica para todas las páginas */
-h1 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 40px; }
-
-h2 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 40px; }
-
-p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px; }
-
-/* FORMULARIOS */
-form p {
-  font-size: 14px; }
-
-/* PROPUESTA DE VALOR: Aplica para Home */
-#tituloPdV {
-  font-size: 28px; }
-
-/* CLIENTES Y RESEÑAS: Aplica en Home y en Clientes */
-.resena__h3--uppercase {
-  text-transform: uppercase;
-  font-size: 12px; }
-
-/* FOOTER: Aplica en todas las páginas */
-.footer__menu {
-  font-style: normal;
-  font-size: 14px; }
-
-/* BLOG: Página con Grid */
-.menuCategoria {
-  font-size: 18px; }
-
-#categoriaBlog h2 {
-  font-size: 20px; }
-
-#ranking h2 {
-  font-size: 20px; }
-
-.posteo-ranking__texto h3 {
-  font-size: 20px; }
-
-#ranking h2 {
-  font-size: 25px; }
-
-/* POSTEOS */
-.contenido-posteo div h2 {
-  font-size: 28px; }
-
-.contenido-posteo div h3 {
-  font-size: 22px;
-  font-family: 'Frank Ruhl Libre', serif; }
-
-.contenido-posteo__texto {
-  line-height: 25px;
-  font-style: normal;
-  font-size: 18px;
-  text-align: left; }
-
-.contenido-posteo__boton--contacto {
-  line-height: 25px;
-  font-style: normal;
-  font-size: 18px;
-  text-align: center; }
-
-/* RESPONSIVE: Adaptación para TABLETS */
-@media only screen and (max-width: 1000px) {
-  /* Header */
-  nav {
-    font-size: 14px; }
-  /* Grid */
-  .menuCategoria {
-    font-size: 14px; } }
-
-/* RESPONSIVE: Adaptación para CELULARES */
-@media only screen and (max-width: 500px) {
-  /* Header */
-  nav {
-    font-size: 14px; }
-  h1, h2 {
-    font-size: 30px; }
-  /* Presentación */
-  #presentacion h1 {
-    font-size: 30px; }
-  /* Beneficios */
-  h2 {
-    font-size: 30px; }
-  p {
-    font-size: 14px; }
-  .ul__li--lista {
-    font-size: 14px; }
-  /* Footer */
-  .footer__logo p {
-    font-size: 13px; }
-  .footer__menu {
-    font-size: 13px; }
-  /* BLOG: Página con Grid */
-  #ranking h2 {
-    font-size: 20px; }
-  .posteo-ranking__texto h3 {
-    font-size: 16px; }
-  #ranking h2 {
-    font-size: 25px; } }
-
-body {
-  text-align: center; }
-
-/* CABEZAL: Aplica para todas las páginas */
-header {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2; }
-
-.header__logo img:hover {
-  content: url("../imagenes/index/logoHover.png"); }
-
-nav ul li {
-  display: inline; }
-
-header nav ul li a {
-  text-decoration: none; }
-
-header nav ul li a:hover {
-  opacity: 0.7; }
-
-.nav__boton--contacto {
-  border-radius: 5px; }
-
-.nav__menu--superior {
-  line-height: 20px; }
-
-.subMenu {
-  line-height: 20px; }
-
-/* PRESENTACIÓN: Aplica para la Home */
-#presentacion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-
-#textoPresentacion {
-  z-index: 1; }
-
-/* GENERAL: Aplica para todas las páginas */
-li {
-  text-align: left;
-  list-style-type: none; }
-
-.main__banner {
-  background-image: url("../imagenes/beneficios/bannerWeb.png");
-  background-size: cover; }
-
-#prefooterContacto {
-  background-image: url("../imagenes/index/banner2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-/* FORMULARIOS */
-#formularioApertura {
-  background-image: url("../imagenes/index/banner.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 45%;
-  z-index: 0;
-  transition: background-size 2s; }
-
-#formularioApertura:hover {
-  background-size: 40%; }
-
-#formularioCierre {
-  justify-content: center;
-  background-image: url("../imagenes/index/banner2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-input[type=text] {
-  border-radius: 5px;
-  justify-content: center; }
-
-input[type=email] {
-  border-radius: 5px;
-  justify-content: center; }
-
-input[type=telefono] {
-  border-radius: 5px;
-  justify-content: center; }
-
-input[type=submit] {
-  border-radius: 5px;
-  border: none; }
-
-input[type=reset] {
-  border-radius: 5px;
-  border: none; }
-
-input[type=button] {
-  border-radius: 5px;
-  border: none; }
-
-textarea {
-  border-radius: 5px;
-  justify-content: center; }
-
-button {
-  border-radius: 5px;
-  border: none; }
-
-button:hover {
-  opacity: 0.8; }
-
-input[type=button]:hover {
-  opacity: 0.8; }
-
-input[type=reset]:hover {
-  opacity: 0.8; }
-
-/* BENEFICIOS: Aplica para Home y Beneficios */
-.ul__li--lista {
-  display: inline-block; }
-
-.sectionBeneficios {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-
-.articleBeneficios {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  border-radius: 15px; }
-
-.articleBeneficios:hover {
-  transform: scale(1.05, 1.05); }
-
-.articleBeneficios__img {
-  align-items: center;
-  display: block; }
-
-.articleBeneficios__texto {
-  text-align: left; }
-
-/* PROPUESTA DE VALOR: Aplica para Home */
-#propuestaDeValor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-aside {
-  text-align: left;
-  display: block; }
-
-#imagenPdV {
-  display: block; }
-
-/* CLIENTES Y RESEÑAS: Aplica en Home y en Clientes */
-.logoMarcas h2 {
-  text-align: center; }
-
-.clientes {
-  display: wrap;
-  justify-content: center;
-  align-content: center;
-  align-self: center; }
-
-.clientes__img {
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-self: center;
-  border-radius: 15px; }
-
-.clientes__img:hover {
-  opacity: 0.7;
-  transform: scale(1.1, 1.1); }
-
-.reviews {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
-.reviews__resena {
-  border-radius: 15px; }
-
-.reviews__resena:hover {
-  transform: scale(1.05, 1.05); }
-
-.resena__img {
-  border-radius: 50%; }
-
-/* EMPRESA: Aplica únicamente en Empresa */
-#quienesSomos {
-  text-align: center; }
-
-/* FOOTER: Aplica en todas las páginas */
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row; }
-
-.footer__menu {
-  text-align: left; }
-
-footer ul li {
-  text-decoration: none; }
-
-.footer__logo {
-  text-align: left; }
-
-footer ul li a {
-  text-decoration: none; }
-
-footer ul li a:hover {
-  opacity: 0.7; }
-
-/* BLOG: Página con Grid */
-#grid {
-  display: grid;
-  grid-template-areas: "header header header"
- "categoriaBlog posteos ranking"
- "footer footer footer";
-  grid-template-rows: 100px auto 200px;
-  grid-template-columns: 1fr 3fr 2fr;
-  justify-items: stretch; }
-
-#grid {
-  grid-column-gap: 20px;
-  grid-row-gap: 10px; }
-
-header {
-  grid-area: header; }
-
-footer {
-  grid-area: footer; }
-
-section#posteos {
-  grid-area: posteos;
-  justify-content: end;
-  justify-self: center; }
-
-.posteo {
-  display: flex;
-  min-width: 350px;
-  justify-self: end;
-  justify-content: right;
-  flex-direction: row;
-  border-radius: 15px; }
-
-.posteo:hover {
-  transform: scale(1.03, 1.03); }
-
-.posteo__img {
-  align-items: center;
-  display: block;
-  border-radius: 15px; }
-
-.posteo__texto {
-  text-align: left;
-  align-self: center; }
-
-section#categoriaBlog {
-  grid-area: categoriaBlog;
-  justify-content: end;
-  justify-self: end; }
-
-.menuCategoria {
-  text-align: left;
-  line-height: 10px;
-  text-decoration: none;
-  line-height: 60px; }
-
-aside#ranking {
-  grid-area: ranking;
-  justify-content: center;
-  justify-self: start; }
-
-#ranking h2 {
-  text-align: center;
-  justify-self: center; }
-
-.posteo-ranking {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px; }
-
-.posteo-ranking:hover {
-  transform: scale(1.05, 1.05); }
-
-.posteo-ranking__img {
-  align-items: center;
-  display: block;
-  border-radius: 10px; }
-
-.posteo-ranking__texto {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  align-items: center; }
-
-.posteo-ranking__texto h3 {
-  text-align: left; }
-
-.posteo__texto--ver-mas:hover {
-  opacity: 0.8; }
-
-#ranking h2 {
-  text-align: center; }
-
-.posteo-ranking__texto {
-  margin-left: -20px; }
-
-/* POSTEOS */
-.carousel-item {
-  background-size: cover; }
-
-.loMasLeido {
-  text-align: left;
-  font-size: 18px;
-  font-family: 'Frank Ruhl Libre', serif; }
-
-.breadcrumb a {
-  text-decoration: none; }
-
-.contenido-posteo {
-  border-radius: 15px;
-  position: relative;
-  z-index: 2; }
-
-.carousel {
-  z-index: 1; }
-
-#carouselExampleControls {
-  z-index: 1; }
-
-.carousel-item {
-  z-index: 1; }
-
-.carousel-item img {
-  z-index: 1; }
-
-.d-block {
-  z-index: 1; }
-
-.btn {
-  border: none; }
-
-.btn a {
-  text-decoration: none; }
-
-.btn:hover {
-  transform: scale(1.05, 1.05); }
-
-.col a {
-  text-decoration: none; }
-
-.col:hover {
-  transform: scale(1.05, 1.05); }
-
-/* RESPONSIVE: Adaptación para TABLETS */
-@media only screen and (max-width: 1000px) {
-  /* Header */
-  header {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    z-index: 2; }
-  nav {
-    align-content: center; }
-  .nav__boton--contacto {
-    background: none;
-    border: none; }
-  label {
-    justify-content: center; }
-  /* Grid */
-  #grid {
+    margin: 0px;
     display: grid;
-    grid-template-areas: "header"
- "categoriaBlog"
- "posteos"
- "ranking"
- "footer";
+    grid-template-areas: "header" "posteos" "ranking" "footer";
     grid-template-rows: 100px auto auto 200px;
     grid-template-columns: auto;
-    justify-items: stretch; }
-  #grid {
-    grid-column-gap: 20px;
-    grid-row-gap: 10px; }
-  .menuCategoria {
-    line-height: 20px; } }
-
-/* RESPONSIVE: Adaptación para CELULARES */
-@media only screen and (max-width: 500px) {
-  /* Header */
-  header {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    z-index: 2; }
-  nav {
-    align-content: center; }
-  .nav__boton--contacto {
-    background: none;
-    border: none; }
-  /* Cabezal */
-  #formularioApertura {
-    background-image: url("../imagenes/index/banner480.png");
-    background-size: 80%;
-    justify-content: center;
-    align-items: center; }
-  label {
-    justify-content: center; }
-  /* Beneficios */
-  aside {
-    display: block; }
-  .articleBeneficios__img {
-    align-items: center;
-    display: block; }
-  /* Clientes y reseñas */
-  .reviews {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  /* EMPRESA: Aplica únicamente en Empresa */
-  #quienesSomos {
-    text-align: center; }
-  /* BLOG: Página con Grid */
-  #grid {
-    display: grid;
-    grid-template-areas: "header"
- "posteos"
- "ranking"
- "footer";
-    grid-template-rows: 100px auto auto 200px;
-    grid-template-columns: auto;
-    justify-items: stretch; }
-  #grid {
+    justify-items: stretch;
     grid-column-gap: 20px;
     grid-row-gap: 10px; }
   header {
@@ -1213,45 +894,280 @@ aside#ranking {
     justify-content: start;
     justify-items: center; }
   section#posteos {
+    width: 90%;
     grid-area: posteos;
     justify-content: center;
     justify-self: center; }
   .posteo {
+    min-width: 370px;
+    margin: 10px;
     display: flex;
     justify-self: center;
     justify-content: center;
     flex-direction: row;
     border-radius: 15px; }
   .posteo__img {
+    margin: 20px;
+    height: 120px;
     align-items: center;
     display: block;
     border-radius: 15px; }
   .posteo__texto {
+    width: 40%;
     text-align: left;
     align-self: center; }
-  aside#ranking {
-    grid-area: ranking;
-    justify-content: center;
-    justify-self: center; }
+  .posteo__texto h2 {
+    margin-top: 20%;
+    margin-left: 20px; }
+  .posteo__texto p {
+    width: 80%; }
   #ranking h2 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 25px;
     text-align: center;
     justify-self: center; }
   .posteo-ranking {
+    margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 15px; }
+  .posteo-ranking__img {
+    margin-left: 10px; }
   .posteo-ranking__texto {
+    margin-left: -200px;
     display: flex;
     flex-direction: column;
     text-align: left;
     align-items: center; }
   .posteo-ranking__texto h3 {
+    font-size: 16px;
     text-align: left; }
+  aside#ranking {
+    grid-area: ranking;
+    justify-content: center;
+    justify-self: center; }
   .posteo__texto--ver-mas a {
     text-decoration: none; }
   .posteo__texto--ver-mas:hover {
-    opacity: 0.8; }
+    opacity: 0.8; } }
+
+/* RESPONSIVE: Adaptación para CELULARES chicos */
+@media only screen and (max-width: 325px) {
+  /* Header */
+  nav {
+    margin: auto;
+    width: 100%;
+    font-size: 12px;
+    align-content: center; }
+  nav ul {
+    margin-left: -70px; }
+  .header__logo {
+    margin-top: 20px;
+    margin-left: -30px; }
+  /* Presentación */
+  #presentacion h1 {
+    font-size: 25px;
+    margin-top: 80px;
+    max-width: 290px; }
+  #textoPresentacion {
+    width: 280px; }
+  /* Beneficios */
+  h2 {
+    font-size: 25px;
+    max-width: 290px; }
+  p {
+    font-size: 13px; }
+  aside {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    display: block; }
+  .articleBeneficios {
+    margin-left: 7px;
+    min-width: 300px; }
+  .articleBeneficios__img {
+    margin: 15px;
+    height: 50px;
+    display: none; }
+  .articleBeneficios__texto {
+    width: 230px; }
+  .ul__li--lista {
+    font-size: 12px;
+    width: 300px;
+    display: inline; }
+  .articleBeneficios aside ul {
+    width: 300px;
+    margin-left: -40px; }
+  /* Propuesta de valor */
+  #tituloPdV {
+    margin-left: 15px;
+    width: 280px; }
+  #propuestaDeValor aside p {
+    margin-left: 15px;
+    width: 280px; }
+  #imagenPdV {
+    margin-right: 0px;
+    margin-top: 25px; }
+  /* Clientes y reseñas */
+  .logoMarcas {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    min-width: 310px; }
+  .clientes {
+    min-width: 310px;
+    width: 90%;
+    margin: auto; }
+  .clientes__img {
+    width: 120px;
+    min-width: 90px;
+    height: 85x;
+    margin: 10px; }
+  /* Footer */
+  footer {
+    height: 400px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%; }
+  .footer__menu {
+    min-width: 80px;
+    font-size: 14px;
+    text-align: left; }
+  .footer__logo {
+    margin: auto;
+    padding-top: 50px;
+    max-width: 300px;
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+    width: 100%; }
+  .footer div p {
+    text-align: center;
+    width: 280px; }
+  footer ul {
+    margin-left: 60px; }
+  #formularioCierre {
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    background-image: url("../imagenes/index/banner2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  /* Contacto */
+  #contacto__formulario h2 {
+    width: 300px;
+    text-align: center;
+    margin: auto; }
+  #contacto__formulario p {
+    width: 280px;
+    text-align: center;
+    margin: auto; }
+  /* BLOG: Página con Grid */
+  #grid {
+    margin: 0px;
+    display: grid;
+    grid-template-areas: "header" "posteos" "ranking" "footer";
+    grid-template-rows: 100px auto auto 200px;
+    grid-template-columns: auto;
+    justify-items: stretch;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px; }
+  header {
+    grid-area: header;
+    justify-content: start;
+    justify-items: center;
+    width: 100%; }
+  #categoriaBlog {
+    display: none; }
+  section#posteos {
+    grid-area: posteos;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 40px; }
+  #posteos h2 {
+    margin-bottom: 30px; }
+  .posteo {
+    min-width: 270px;
+    margin: 10px;
+    width: 270px; }
+  .posteo__img {
+    margin: 20px;
+    height: 80px;
+    align-items: center;
+    display: none; }
+  .posteo__texto {
+    width: 250px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    align-self: center; }
+  .posteo__texto h3 {
+    font-size: 16px; }
+  .posteo__texto p {
+    width: 250px; }
+  .posteo__texto--ver-mas {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .posteo-ranking__img {
+    display: inline;
+    width: 70px;
+    height: 70px;
+    margin-left: 70px;
+    margin-right: 20px; }
+  .posteo-ranking {
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 270px; }
+  .posteo-ranking__texto {
+    margin-left: 0px;
+    display: block;
+    flex-direction: column;
+    text-align: left;
+    align-items: center; }
+  aside#ranking {
+    margin-right: 0px;
+    grid-area: ranking;
+    justify-content: center;
+    justify-self: center; }
   #ranking h2 {
-    text-align: center; } }
+    margin-left: -50px;
+    font-size: 25px;
+    text-align: center;
+    justify-self: center; }
+  /* POSTEOS */
+  .contenido-posteo__texto {
+    width: 300px;
+    margin: auto;
+    font-size: 13px;
+    text-align: left; }
+  main div h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 0px; }
+  main div h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+  main div h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+  .btn-primary {
+    font-size: 14px; }
+  .contenido-posteo__boton--contacto {
+    font-size: 14px; }
+  .loMasLeido {
+    font-size: 20px; }
+  .contenido-posteo {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+    margin-top: -30px; } }

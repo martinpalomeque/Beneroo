@@ -1,3 +1,5 @@
+@import "colores";
+@import "tipografia";
 
 body{
     margin: auto;
@@ -726,89 +728,85 @@ aside#ranking{
  /* RESPONSIVE: Adaptación para TABLETS */
  @media only screen and (max-width: 1000px){
 
-        /* Header */
-
-        header{
-            height: auto;
-            width: 100%;
-            border-bottom: solid 1px $borde_gris;
-            box-shadow: 0px 4px 10px $shadow_grey;
-            display:block;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-        .nav__menu--contactoSeleccionado{
-            color: $color_rosado;
-        }
-
-        .header__logo{
-            margin: 0px;
-            margin-top: 20px;
-        }     
-        nav{
-            margin:auto;
-            align-content: center;
-            width: 480px;
-            font-size: 14px;
-            align-content: center;
-        }
-        .nav__boton--contacto{
-            padding: 0px;
-            color: $color_negro;
-            background: none;
-            border:none;
-        }
-        iframe{
-            width: 100%;
-            height: 450px;
-        }      
-        label{
-            justify-content: center;
-        }
+    /* Header */
+    header{
+        height: auto;
+        width: 100%;
+        border-bottom: solid 1px $borde_gris;
+        box-shadow: 0px 4px 10px $shadow_grey;
+        display:block;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    .nav__menu--contactoSeleccionado{
+        color: $color_rosado;
+    }
+    .header__logo{
+        margin: 0px;
+        margin-top: 20px;
+    }     
+    nav{
+        margin:auto;
+        align-content: center;
+        width: 480px;
+        font-size: 14px;
+        align-content: center;
+    }
+    .nav__boton--contacto{
+        padding: 0px;
+        color: $color_negro;
+        background: none;
+        border:none;
+    }
+    iframe{
+        width: 100%;
+        height: 450px;
+    }      
+    label{
+        justify-content: center;
+    }
         
-        /* Clientes y reseñas */
+    /* Clientes y reseñas */
  
- .reviews__resena{
-    margin: 10px;
-    margin-bottom: 50px;
-    width: 80%;
- }
- #formularioApertura{
-    padding: 120px 400px 300px 400px;
-}
-
-input[type=text] {
-    width: 60%;
-}
-input[type=email] {
-    width: 60%;
-}
-input[type=telefono] {
-    width: 60%;
-}
-textarea {
-    width: 60%;
-}
-
-input[type=submit] {
-    width: 40%;
-    margin: 5px;
-}
-footer{
-    width: 100%;
-}
-.footer__logo{
-    margin-right: 100px;
-}
-.testimonios{
-    margin-top: 120px;
-}
-.testimonios h2{
-    margin:auto;
-    margin-bottom: 60px;
-    width: 80%;
-}
+    .reviews__resena{
+        margin: 10px;
+        margin-bottom: 50px;
+        width: 80%;
+    }
+    #formularioApertura{
+        padding: 120px 400px 300px 400px;
+    }
+    input[type=text] {
+        width: 60%;
+    }
+    input[type=email] {
+        width: 60%;
+    }
+    input[type=telefono] {
+        width: 60%;
+    }
+    textarea {
+        width: 60%;
+    }
+    input[type=submit] {
+        width: 40%;
+        margin: 5px;
+    }
+    footer{
+        width: 100%;
+    }
+    .footer__logo{
+        margin-right: 100px;
+    }
+    .testimonios{
+        margin-top: 120px;
+    }
+    .testimonios h2{
+        margin:auto;
+        margin-bottom: 60px;
+        width: 80%;
+    }
 
     /* Grid */
 
@@ -832,15 +830,15 @@ footer{
         line-height: 20px;
         }
 
-/* BLOG: Página con Grid */
-.posteo{
+    /* BLOG: Página con Grid */
+    .posteo{
         background-color: $color_blanco;
         box-shadow: 0px 4px 10px $shadow_grey;
-}
-.posteo-ranking{
+    }
+    .posteo-ranking{
         background-color: $color_blanco;
         box-shadow: 0px 4px 10px $shadow_grey;
-}
+    }
 
 }
 
@@ -886,9 +884,7 @@ footer{
         font-size: 30px;
     }
   
-
     /* Cabezal */
-
     #formularioApertura{
         margin-top: -20px;
         padding-right: 0px;
@@ -915,9 +911,7 @@ footer{
         justify-content: center;
     }
 
-
     /* Presentación */
-
     main{
         width: 100%;
         margin-left: 0px;
@@ -938,10 +932,7 @@ footer{
         margin-left: 0px;
     }
 
-
-
     /* Beneficios */
-
     h2{
         width: 440px;
         margin-left: 0px;
@@ -956,7 +947,6 @@ footer{
         margin-bottom: 0px;
         display: block;
     }    
-
     .articleBeneficios__img{
         margin: 15px;
         height: 150px;
@@ -967,273 +957,204 @@ footer{
         font-size: 14px;
     }
 
-
-
     /* Clientes y reseñas */
- 
- .testimonios{
-    margin-top: 120px;
-}
-.testimonios h2{
-    margin-bottom: 60px;
- }
- .reviews__resena{
-    margin: 20px;
-    margin-bottom: 50px;
-    width: 80%;
-    max-width: 400px;
- }
- .reviews__resena p{
-    margin:20px;
-    margin-bottom: 40px;
- }
- .reviews{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
+    .testimonios{
+        margin-top: 120px;
+    }
+    .testimonios h2{
+        margin-bottom: 60px;
+    }
+    .reviews__resena{
+        margin: 20px;
+        margin-bottom: 50px;
+        width: 80%;
+        max-width: 400px;
+    }
+    .reviews__resena p{
+        margin:20px;
+        margin-bottom: 40px;
+    }
+    .reviews{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    /* Footer */
+    footer{
+        height: 220px;
+    }
+    .footer__logo{
+        margin-left: 30px;
+    }
+    .footer__logo p {
+        font-size: 13px;
+    }
+    .footer__menu{
+        font-size: 13px;
+    }
 
+    /* EMPRESA: Aplica únicamente en Empresa */
+    #quienesSomos {
+        margin: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    #quienesSomos h2{
+        width: 80%;
+    }
+    #quienesSomos p{
+        width: 80%;
+    }
+    iframe{
+        width: 100%;
+        height: 350px;
+    }
+    input[type=text] {
+        width: 60%;
+    }
+    input[type=email] {
+        width: 60%;
+    }
+    input[type=telefono] {
+        width: 60%;
+    }
+    textarea {
+        width: 60%;
+    }
 
-
- /* Footer */
-
- footer{
-    height: 220px;
- }
-.footer__logo{
-    margin-left: 30px;
-}
-.footer__logo p {
-    font-size: 13px;
-}
-.footer__menu{
-    font-size: 13px;
-}
-
-
- /* EMPRESA: Aplica únicamente en Empresa */
-
- #quienesSomos {
-    margin: auto;
-    margin-bottom: 50px;
-    text-align: center;
-}
-#quienesSomos h2{
-    width: 80%;
-}
-#quienesSomos p{
-   width: 80%;
-}
-iframe{
-    width: 100%;
-    height: 350px;
-}
-input[type=text] {
-    width: 60%;
-}
-input[type=email] {
-    width: 60%;
-}
-input[type=telefono] {
-    width: 60%;
-}
-textarea {
-    width: 60%;
-}
-
-
-/* BLOG: Página con Grid */
-
-#grid{
-    margin: 0px;
-    display:grid;
-    grid-template-areas:
-    "header"
-    "posteos"
-    "ranking"
-    "footer";
-    grid-template-rows: 100px auto auto 200px;
-    grid-template-columns: auto;
-    justify-items: stretch;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-}
-header{
-    grid-area: header;
-    justify-content: start;
-    justify-items: center;
- }
-section#posteos{
-    width: 90%;
-    grid-area: posteos;
-    justify-content: center;
-    justify-self: center;
- }
-.posteo{
-   min-width: 370px;
-   margin: 10px;
-   display: flex;
-   justify-self: center;
-   justify-content: center;
-   flex-direction:row;
-   border-radius: 15px;
-}
-.posteo__img{
-   margin: 20px;
-   height: 120px;
-   align-items: center;
-   display: block;
-   border-radius: 15px;
-}
-.posteo__texto{
-   width: 40%;
-   text-align: left;
-   align-self: center;
-}
-.posteo__texto h2{
-    margin-top: 20%;
-    margin-left: 20px;
- }
-.posteo__texto p{
-    width: 80%;
- }
-#ranking h2{
-   margin-top: 30px;
-   margin-bottom: 40px;
-   font-size: 25px;
-   text-align: center;
-   justify-self: center;
-}
-.posteo-ranking{
-   margin:10px;
-   display:flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   border-radius: 15px;
-}
-.posteo-ranking__img{
-   margin-left: 10px;
-}
-.posteo-ranking__texto{
-    margin-left: -200px;
-    display:flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: center;
- }
-.posteo-ranking__texto h3{
-    font-size: 16px;
-    text-align: left;
-}
-aside#ranking{
-    grid-area: ranking;
-    justify-content: center;
-    justify-self: center;
-}
-.posteo__texto--ver-mas a{
-    text-decoration: none;
- }
- .posteo__texto--ver-mas:hover{
-    opacity: 0.8;
- }
+    /* BLOG: Página con Grid */
+    #grid{
+        margin: 0px;
+        display:grid;
+        grid-template-areas:
+        "header"
+        "posteos"
+        "ranking"
+        "footer";
+        grid-template-rows: 100px auto auto 200px;
+        grid-template-columns: auto;
+        justify-items: stretch;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    }
+    header{
+        grid-area: header;
+        justify-content: start;
+        justify-items: center;
+    }
+    section#posteos{
+        width: 90%;
+        grid-area: posteos;
+        justify-content: center;
+        justify-self: center;
+    }
+    .posteo{
+        min-width: 370px;
+        margin: 10px;
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+        flex-direction:row;
+        border-radius: 15px;
+    }
+    .posteo__img{
+        margin: 20px;
+        height: 120px;
+        align-items: center;
+        display: block;
+        border-radius: 15px;
+    }
+    .posteo__texto{
+        width: 40%;
+        text-align: left;
+        align-self: center;
+    }
+    .posteo__texto h2{
+        margin-top: 20%;
+        margin-left: 20px;
+    }
+    .posteo__texto p{
+        width: 80%;
+    }
+    #ranking h2{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-size: 25px;
+        text-align: center;
+        justify-self: center;
+    }
+    .posteo-ranking{
+        margin:10px;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+    .posteo-ranking__img{
+        margin-left: 10px;
+    }
+    .posteo-ranking__texto{
+        margin-left: -200px;
+        display:flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+    }
+    .posteo-ranking__texto h3{
+        font-size: 16px;
+        text-align: left;
+    }
+    aside#ranking{
+        grid-area: ranking;
+        justify-content: center;
+        justify-self: center;
+    }
+    .posteo__texto--ver-mas a{
+        text-decoration: none;
+    }
+    .posteo__texto--ver-mas:hover{
+        opacity: 0.8;
+    }
 }
 
  /* RESPONSIVE: Adaptación para CELULARES chicos */
- @media only screen and (max-width: 310px){
- 
-    /* Header */
+ @media only screen and (max-width: 325px){
 
-    header{
-        height: auto;
-        width: 100%;
-        border-bottom: solid 1px $shadow_grey;
-        box-shadow: 0px 4px 10px $shadow_grey;
-        display:block;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
-    }
+    /* Header */
     nav{
         margin: auto;
-        width: 320px;
-        font-size: 13px;
+        width: 100%;
+        font-size: 12px;
         align-content: center;
     }
-    .nav__boton--contacto{
-        padding: 0px;
-        color:$color_negro;
-        background: none;
-        border:none;
+    nav ul{
+        margin-left: -70px;
     }
-    h1, h2{
-        font-size: 20px;
+    .header__logo{
+        margin-top: 20px;
+        margin-left: -30px;
     }
-  
-
-    /* Cabezal */
-
-    #formularioApertura{
-        margin-top: -20px;
-        padding-right: 0px;
-        padding-left: 0px;
-        padding-top: 200px;
-        width: 100%;
-        padding-bottom: 70px;
-        background-image: url("../imagenes/index/banner480.png");
-        background-size: 80%;
-        justify-content: center;
-        align-items: center;
-    }
-    input[type=text] {
-        width: 60%;
-    }
-    input[type=email] {
-        width: 60%;
-    }
-    input[type=submit] {
-        width: 40%;
-        margin: 5px;
-    }
-    label{
-        justify-content: center;
-    }
-
-
+    
     /* Presentación */
 
-    main{
-        width: 100%;
-        margin-left: 0px;
-    }
-    #presentación{
-        width: 100%;
-        margin-left: 0px;
-        padding-top: 80px;
-    }
     #presentacion h1{
-        width: 440px;
-        margin-left: 0px;
-        padding-top: 50px;
-        font-size: 20px;
+        font-size: 25px;
+        margin-top: 80px;
+        max-width: 290px;
     }
     #textoPresentacion{
-        width: 390px;
-        margin-left: 0px;
+        width: 280px;
     }
-
-
-
+  
     /* Beneficios */
-
     h2{
-        width: 440px;
-        margin-left: 0px;
-        font-size: 30px;
+        font-size: 25px;
+        max-width: 290px;
     }
     p{
-        font-size: 14px;
+        font-size: 13px;
     }   
     aside{
         margin-left: 0px;
@@ -1241,95 +1162,116 @@ aside#ranking{
         margin-bottom: 0px;
         display: block;
     }    
+    .articleBeneficios{
+        margin-left: 7px;
+        min-width: 300px;
+    }
 
     .articleBeneficios__img{
         margin: 15px;
-        height: 150px;
-        align-items: center;
-        display: block;
+        height: 50px;
+        display: none;
+    }
+    .articleBeneficios__texto{
+        width: 230px;
     }
     .ul__li--lista {
-        font-size: 14px;
+        font-size: 12px;
+        width: 300px;
+        display: inline;
+    }
+    .articleBeneficios aside ul{
+        width: 300px;
+        margin-left: -40px;
     }
 
-
+    /* Propuesta de valor */
+    #tituloPdV{
+        margin-left: 15px;
+        width: 280px;
+    }
+    #propuestaDeValor aside p{
+        margin-left: 15px;
+        width: 280px;
+    }
+    #imagenPdV{
+        margin-right: 0px;
+        margin-top: 25px;
+    }
 
     /* Clientes y reseñas */
- 
- .testimonios{
-    margin-top: 120px;
-}
-.testimonios h2{
-    margin-bottom: 60px;
- }
- .reviews__resena{
-    margin: 20px;
-    margin-bottom: 50px;
-    width: 80%;
-    max-width: 400px;
- }
- .reviews__resena p{
-    margin:20px;
-    margin-bottom: 40px;
- }
- .reviews{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
-
-
-
+    .logoMarcas{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        min-width: 310px;
+    }
+    .clientes{
+        min-width: 310px;
+        width: 90%;
+        margin: auto;
+    }
+    .clientes__img{
+        width: 120px;
+        min-width: 90px;
+        height: 85x;
+        margin: 10px;
+    }
 
  /* Footer */
-
  footer{
-    height: 220px;
- }
-.footer__logo{
-    margin-left: 30px;
-}
-.footer__logo p {
-    font-size: 13px;
-}
-.footer__menu{
-    font-size: 13px;
-}
-
-
- /* EMPRESA: Aplica únicamente en Empresa */
-
- #quienesSomos {
-    margin: auto;
-    margin-bottom: 50px;
-    text-align: center;
-}
-#quienesSomos h2{
-    width: 80%;
-}
-#quienesSomos p{
-   width: 80%;
-}
-iframe{
+    height: 400px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     width: 100%;
-    height: 350px;
-}
-input[type=text] {
-    width: 60%;
-}
-input[type=email] {
-    width: 60%;
-}
-input[type=telefono] {
-    width: 60%;
-}
-textarea {
-    width: 60%;
+ }
+
+.footer__menu{
+    min-width: 80px;
+    font-size: 14px;
+    text-align: left;
 }
 
+.footer__logo{
+    margin: auto;
+    padding-top: 50px;
+    max-width: 300px;
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.footer div p{
+    text-align: center;
+    width: 280px;
+}
+footer ul{
+    margin-left: 60px;
+}
+#formularioCierre{
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    background-image: url("../imagenes/index/banner2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Contacto */
+#contacto__formulario h2{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+#contacto__formulario p{
+    width: 280px;
+    text-align: center;
+    margin: auto;
+}
 
 /* BLOG: Página con Grid */
-
 #grid{
     margin: 0px;
     display:grid;
@@ -1348,81 +1290,149 @@ header{
     grid-area: header;
     justify-content: start;
     justify-items: center;
+    width: 100%;
  }
+#categoriaBlog{
+    display: none;
+}
 section#posteos{
-    width: 90%;
     grid-area: posteos;
     justify-content: center;
     justify-self: center;
+    margin-top: 40px;
+ }
+ #posteos h2{
+     margin-bottom: 30px;
  }
 .posteo{
-   min-width: 370px;
+   min-width: 270px;
    margin: 10px;
-   display: flex;
-   justify-self: center;
-   justify-content: center;
-   flex-direction:row;
-   border-radius: 15px;
+   width: 270px;
 }
 .posteo__img{
    margin: 20px;
-   height: 120px;
+   height: 80px;
    align-items: center;
-   display: block;
-   border-radius: 15px;
+   display: none;
 }
 .posteo__texto{
-   width: 40%;
-   text-align: left;
+   width: 250px;
+   margin: auto;
+   display: block;
+   text-align: center;
    align-self: center;
 }
-.posteo__texto h2{
-    margin-top: 20%;
-    margin-left: 20px;
+.posteo__texto h3{
+    font-size: 16px;;
  }
 .posteo__texto p{
-    width: 80%;
+    width: 250px;
  }
-#ranking h2{
-   margin-top: 30px;
-   margin-bottom: 40px;
-   font-size: 25px;
-   text-align: center;
-   justify-self: center;
-}
-.posteo-ranking{
-   margin:10px;
-   display:flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   border-radius: 15px;
+.posteo__texto--ver-mas{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .posteo-ranking__img{
-   margin-left: 10px;
+   display: inline;
+   width: 70px;
+   height: 70px;
+   margin-left: 70px;
+   margin-right: 20px;
+}
+.posteo-ranking{
+   margin: auto;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   width: 270px;
 }
 .posteo-ranking__texto{
-    margin-left: -200px;
-    display:flex;
+    margin-left: 0px;
+    display:block;
     flex-direction: column;
     text-align: left;
     align-items: center;
  }
-.posteo-ranking__texto h3{
-    font-size: 16px;
-    text-align: left;
-}
-aside#ranking{
+ aside#ranking{
+    margin-right: 0px;
     grid-area: ranking;
     justify-content: center;
     justify-self: center;
+ }
+#ranking h2{
+   margin-left: -50px;
+   font-size: 25px;
+   text-align: center;
+   justify-self: center;
 }
-.posteo__texto--ver-mas a{
-    text-decoration: none;
- }
- .posteo__texto--ver-mas:hover{
-    opacity: 0.8;
- }
+
+/* POSTEOS */
+
+.contenido-posteo__texto{
+    width: 300px;
+    margin:auto;
+    font-size: 13px;
+    text-align: left;
+}
+main div h1{
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+main div h2{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+main div h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.btn-primary{
+    font-size: 14px;
+}
+.contenido-posteo__boton--contacto{
+    font-size: 14px;
+}
+.loMasLeido{
+    font-size: 20px;
+}
+
+.contenido-posteo{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+    margin-top: -30px;
+}
+
+// .contenido-posteo__boton--contacto{
+//     max-width: 800px;
+//     margin:auto;
+//     margin-bottom: 60px;
+//     line-height : 25px;
+//     font-style: normal;
+//     font-size: 18px;
+//     text-align: center;
+// }
+// .contenido-posteo div h3{
+//     color: $color_negro;
+//     font-size: 22px;
+//     font-family: $tipo_titulares;
+// }
+// .contenido-posteo div h2{
+//     font-size: 28px;
+// }
+// .col a{
+//     color: $color_negro;
+//     text-decoration: none;
+// }
+// .col:hover{
+//     transform:scale(1.05,1.05);    
+// }
+
+
 
 
 
