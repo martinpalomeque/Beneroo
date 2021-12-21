@@ -6,6 +6,7 @@ body{
     background-image: $background_gradiente;
     font-family: $tipo_base;
     text-align: center;
+    min-height: 100%;
 }
 
 /* CABEZAL: Aplica para todas las páginas */
@@ -721,6 +722,16 @@ aside#ranking{
 }
 
 
+/* 404 */
+#404{
+    height: 100%;
+    margin-top: 420px;
+}
+#404__img{
+    padding-top: 120px;
+    align-items: center;
+    display: block;
+}
 
 
 

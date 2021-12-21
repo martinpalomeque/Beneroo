@@ -3,7 +3,8 @@ body {
   margin: auto;
   background-image: linear-gradient(to bottom, #f7f0f7, #e7d3e7);
   font-family: "Montserrat", sans-serif;
-  text-align: center; }
+  text-align: center;
+  min-height: 100%; }
 
 /* CABEZAL: Aplica para todas las páginas */
 header {
@@ -665,6 +666,16 @@ section#categoriaBlog {
 
 .col:hover {
   transform: scale(1.05, 1.05); }
+
+/* 404 */
+#404 {
+  height: 100%;
+  margin-top: 420px; }
+
+#404__img {
+  padding-top: 120px;
+  align-items: center;
+  display: block; }
 
 /* RESPONSIVE: Adaptación para TABLETS */
 @media only screen and (max-width: 1000px) {
