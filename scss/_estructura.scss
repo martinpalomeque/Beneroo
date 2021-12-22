@@ -6,7 +6,6 @@ body{
     background-image: $background_gradiente;
     font-family: $tipo_base;
     text-align: center;
-    min-height: 100%;
 }
 
 /* CABEZAL: Aplica para todas las páginas */
@@ -75,7 +74,7 @@ header nav ul li a:hover{
 
 /* PRESENTACIÓN: Aplica para la Home */
 
-#textoPresentacion{
+.textoPresentacion{
     z-index: 1;
 }
 
@@ -541,8 +540,9 @@ footer{
 }
 .posteo-ranking__texto h3{
     color: $color_negro;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
+    width: 100px;
 }
 aside#ranking{
    margin-right: 100px;
@@ -723,14 +723,19 @@ aside#ranking{
 
 
 /* 404 */
-#404{
+#pageNotFound{
     height: 100%;
-    margin-top: 420px;
+    padding-top: 130px;
 }
-#404__img{
-    padding-top: 120px;
-    align-items: center;
-    display: block;
+
+#pageNotFound__img{
+    margin-top: 60px;
+    margin-bottom: 70px;
+    width: 20%;
+}
+#pageNotFound__texto{
+    margin-top: 30px;
+    margin-bottom: 200px;
 }
 
 
@@ -786,7 +791,8 @@ aside#ranking{
         width: 80%;
     }
     #formularioApertura{
-        padding: 120px 400px 300px 400px;
+        padding: 100px 200px 600px 200px;
+
     }
     input[type=text] {
         width: 60%;
@@ -851,6 +857,20 @@ aside#ranking{
         box-shadow: 0px 4px 10px $shadow_grey;
     }
 
+/* 404 */
+#pageNotFound{
+    padding-top: 130px;
+}
+
+#pageNotFound__img{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 40%;
+}
+#pageNotFound__texto{
+    margin-top: 30px;
+    margin-bottom: 160px;
+}
 }
 
 
@@ -894,6 +914,10 @@ aside#ranking{
     h1, h2{
         font-size: 30px;
     }
+    #presentacion h1{
+        margin-top: 130px;
+    }
+  
   
     /* Cabezal */
     #formularioApertura{
@@ -938,7 +962,7 @@ aside#ranking{
         padding-top: 50px;
         font-size: 30px;
     }
-    #textoPresentacion{
+    .textoPresentacion{
         width: 390px;
         margin-left: 0px;
     }
@@ -1128,6 +1152,21 @@ aside#ranking{
     .posteo__texto--ver-mas:hover{
         opacity: 0.8;
     }
+    /* 404 */
+    #pageNotFound{
+    padding-top: 130px;
+    }
+
+    #pageNotFound__img{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 60%;
+    }
+    #pageNotFound__texto{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    }
 }
 
  /* RESPONSIVE: Adaptación para CELULARES chicos */
@@ -1155,7 +1194,7 @@ aside#ranking{
         margin-top: 80px;
         max-width: 290px;
     }
-    #textoPresentacion{
+    .textoPresentacion{
         width: 280px;
     }
   
@@ -1417,4 +1456,19 @@ main div h3{
     margin-bottom: 70px;
     margin-top: -30px;
 }
+    /* 404 */
+    #pageNotFound{
+        padding-top: 100px;
+    }
+    
+    #pageNotFound__img{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    #pageNotFound__texto{
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 200px;
+    }
 }

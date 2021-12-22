@@ -3,8 +3,7 @@ body {
   margin: auto;
   background-image: linear-gradient(to bottom, #f7f0f7, #e7d3e7);
   font-family: "Montserrat", sans-serif;
-  text-align: center;
-  min-height: 100%; }
+  text-align: center; }
 
 /* CABEZAL: Aplica para todas las páginas */
 header {
@@ -65,7 +64,7 @@ header nav ul li a:hover {
   opacity: 0.7; }
 
 /* PRESENTACIÓN: Aplica para la Home */
-#textoPresentacion {
+.textoPresentacion {
   z-index: 1; }
 
 #presentacion {
@@ -491,8 +490,9 @@ footer {
 
 .posteo-ranking__texto h3 {
   color: #000000;
-  font-size: 20px;
-  text-align: left; }
+  font-size: 16px;
+  text-align: left;
+  width: 100px; }
 
 aside#ranking {
   margin-right: 100px;
@@ -668,14 +668,18 @@ section#categoriaBlog {
   transform: scale(1.05, 1.05); }
 
 /* 404 */
-#404 {
+#pageNotFound {
   height: 100%;
-  margin-top: 420px; }
+  padding-top: 130px; }
 
-#404__img {
-  padding-top: 120px;
-  align-items: center;
-  display: block; }
+#pageNotFound__img {
+  margin-top: 60px;
+  margin-bottom: 70px;
+  width: 20%; }
+
+#pageNotFound__texto {
+  margin-top: 30px;
+  margin-bottom: 200px; }
 
 /* RESPONSIVE: Adaptación para TABLETS */
 @media only screen and (max-width: 1000px) {
@@ -716,7 +720,7 @@ section#categoriaBlog {
     margin-bottom: 50px;
     width: 80%; }
   #formularioApertura {
-    padding: 120px 400px 300px 400px; }
+    padding: 100px 200px 600px 200px; }
   input[type=text] {
     width: 60%; }
   input[type=email] {
@@ -757,7 +761,17 @@ section#categoriaBlog {
     box-shadow: 0px 4px 10px #daced6; }
   .posteo-ranking {
     background-color: #FFF;
-    box-shadow: 0px 4px 10px #daced6; } }
+    box-shadow: 0px 4px 10px #daced6; }
+  /* 404 */
+  #pageNotFound {
+    padding-top: 130px; }
+  #pageNotFound__img {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 40%; }
+  #pageNotFound__texto {
+    margin-top: 30px;
+    margin-bottom: 160px; } }
 
 /* RESPONSIVE: Adaptación para CELULARES grandes */
 @media only screen and (max-width: 500px) {
@@ -788,6 +802,8 @@ section#categoriaBlog {
     border: none; }
   h1, h2 {
     font-size: 30px; }
+  #presentacion h1 {
+    margin-top: 130px; }
   /* Cabezal */
   #formularioApertura {
     margin-top: -20px;
@@ -822,7 +838,7 @@ section#categoriaBlog {
     margin-left: 0px;
     padding-top: 50px;
     font-size: 30px; }
-  #textoPresentacion {
+  .textoPresentacion {
     width: 390px;
     margin-left: 0px; }
   /* Beneficios */
@@ -963,7 +979,18 @@ section#categoriaBlog {
   .posteo__texto--ver-mas a {
     text-decoration: none; }
   .posteo__texto--ver-mas:hover {
-    opacity: 0.8; } }
+    opacity: 0.8; }
+  /* 404 */
+  #pageNotFound {
+    padding-top: 130px; }
+  #pageNotFound__img {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 60%; }
+  #pageNotFound__texto {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 200px; } }
 
 /* RESPONSIVE: Adaptación para CELULARES chicos */
 @media only screen and (max-width: 325px) {
@@ -983,7 +1010,7 @@ section#categoriaBlog {
     font-size: 25px;
     margin-top: 80px;
     max-width: 290px; }
-  #textoPresentacion {
+  .textoPresentacion {
     width: 280px; }
   /* Beneficios */
   h2 {
@@ -1181,4 +1208,15 @@ section#categoriaBlog {
     margin: auto;
     padding-bottom: 30px;
     margin-bottom: 70px;
-    margin-top: -30px; } }
+    margin-top: -30px; }
+  /* 404 */
+  #pageNotFound {
+    padding-top: 100px; }
+  #pageNotFound__img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 80%; }
+  #pageNotFound__texto {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 200px; } }
