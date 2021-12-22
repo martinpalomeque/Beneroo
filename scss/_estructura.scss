@@ -843,8 +843,8 @@ aside#ranking{
         margin: 0px;
     }
     .menuCategoria{
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 30px;
         }
 
     /* BLOG: Página con Grid */
@@ -852,25 +852,32 @@ aside#ranking{
         background-color: $color_blanco;
         box-shadow: 0px 4px 10px $shadow_grey;
     }
-    .posteo-ranking{
-        background-color: $color_blanco;
-        box-shadow: 0px 4px 10px $shadow_grey;
+    aside#ranking{
+        margin-right: 0px;
+        grid-area: ranking;
+        justify-content: center;
+        justify-self: center;
+     }
+     section#categoriaBlog{
+        grid-area: categoriaBlog;
+        justify-content: center;
+        justify-self: center;
+     }
+
+    /* 404 */
+    #pageNotFound{
+        padding-top: 130px;
     }
 
-/* 404 */
-#pageNotFound{
-    padding-top: 130px;
-}
-
-#pageNotFound__img{
-    margin-top: 30px;
-    margin-bottom: 40px;
-    width: 40%;
-}
-#pageNotFound__texto{
-    margin-top: 30px;
-    margin-bottom: 160px;
-}
+    #pageNotFound__img{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        width: 40%;
+    }
+    #pageNotFound__texto{
+        margin-top: 30px;
+        margin-bottom: 200px;
+    }
 }
 
 
@@ -1058,100 +1065,49 @@ aside#ranking{
         width: 60%;
     }
 
-    /* BLOG: Página con Grid */
-    #grid{
-        margin: 0px;
-        display:grid;
-        grid-template-areas:
-        "header"
-        "posteos"
-        "ranking"
-        "footer";
-        grid-template-rows: 100px auto auto 200px;
-        grid-template-columns: auto;
-        justify-items: stretch;
-        grid-column-gap: 20px;
-        grid-row-gap: 10px;
+  
+/* Grid */
+
+#grid{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "categoriaBlog"
+    "posteos"
+    "ranking"
+    "footer";
+    grid-template-rows: 100px auto auto 200px;
+    grid-template-columns: auto;
+    justify-items: stretch;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin: 0px;
+}
+.menuCategoria{
+    font-size: 16px;
+    line-height: 30px;
     }
-    header{
-        grid-area: header;
-        justify-content: start;
-        justify-items: center;
-    }
-    section#posteos{
-        width: 90%;
-        grid-area: posteos;
-        justify-content: center;
-        justify-self: center;
-    }
-    .posteo{
-        min-width: 370px;
-        margin: 10px;
-        display: flex;
-        justify-self: center;
-        justify-content: center;
-        flex-direction:row;
-        border-radius: 15px;
-    }
-    .posteo__img{
-        margin: 20px;
-        height: 120px;
-        align-items: center;
-        display: block;
-        border-radius: 15px;
-    }
-    .posteo__texto{
-        width: 40%;
-        text-align: left;
-        align-self: center;
-    }
-    .posteo__texto h2{
-        margin-top: 20%;
-        margin-left: 20px;
-    }
-    .posteo__texto p{
-        width: 80%;
-    }
-    #ranking h2{
-        margin-top: 30px;
-        margin-bottom: 40px;
-        font-size: 25px;
-        text-align: center;
-        justify-self: center;
-    }
-    .posteo-ranking{
-        margin:10px;
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
-    }
-    .posteo-ranking__img{
-        margin-left: 10px;
-    }
-    .posteo-ranking__texto{
-        margin-left: -200px;
-        display:flex;
-        flex-direction: column;
-        text-align: left;
-        align-items: center;
-    }
-    .posteo-ranking__texto h3{
-        font-size: 16px;
-        text-align: left;
-    }
-    aside#ranking{
-        grid-area: ranking;
-        justify-content: center;
-        justify-self: center;
-    }
-    .posteo__texto--ver-mas a{
-        text-decoration: none;
-    }
-    .posteo__texto--ver-mas:hover{
-        opacity: 0.8;
-    }
+
+/* BLOG: Página con Grid */
+.posteo{
+    background-color: $color_blanco;
+    box-shadow: 0px 4px 10px $shadow_grey;
+}
+aside#ranking{
+    margin-right: 0px;
+    grid-area: ranking;
+    justify-content: center;
+    justify-self: center;
+ }
+ section#categoriaBlog{
+    grid-area: categoriaBlog;
+    justify-content: center;
+    justify-self: center;
+ }
+.posteo-ranking__img{
+    margin-left: 5px;
+}
+    
     /* 404 */
     #pageNotFound{
     padding-top: 130px;
@@ -1165,7 +1121,7 @@ aside#ranking{
     #pageNotFound__texto{
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
     }
 }
 
@@ -1469,6 +1425,6 @@ main div h3{
     #pageNotFound__texto{
         margin: auto;
         margin-top: 30px;
-        margin-bottom: 200px;
+        margin-bottom: 250px;
     }
 }
